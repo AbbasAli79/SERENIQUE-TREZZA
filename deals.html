@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Deals - Serenique Trezza Beaded Elegance</title>
+    <meta name="description"
+        content="Exciting deals and special offers on handcrafted beaded accessories from Serenique Trezza. Check back soon for exclusive discounts and promotions.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgaes/logo.jpeg">
+    <style>
+        /* Additional styles specific to the Deals page */
+        .coming-soon-hero {
+            margin-top: 100px;
+            padding: 100px 0;
+            background: linear-gradient(135deg, rgba(107, 78, 140, 0.9), rgba(200, 124, 165, 0.9)),
+                        url('imgaes/24signature-pet.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .coming-soon-hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .coming-soon-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .coming-soon-hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 30px;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        .coming-soon-hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.7;
+        }
+        
+        .coming-soon-cta {
+            background: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.8rem;
+            color: var(--primary-purple);
+            margin-bottom: 20px;
+        }
+        
+        .cta-content p {
+            font-size: 1.2rem;
+            color: var(--medium-gray);
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-item {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid var(--light-purple);
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .feature-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-purple);
+        }
+        
+        .shop-now-section {
+            background: linear-gradient(135deg, var(--light-purple) 0%, var(--light-pink) 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .shop-now-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .shop-now-content h2 {
+            font-size: 2.5rem;
+            color: var(--primary-purple);
+            margin-bottom: 20px;
+        }
+        
+        .shop-now-content p {
+            font-size: 1.2rem;
+            color: var(--medium-gray);
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+        
+        .shop-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @media (max-width: 768px) {
+            .coming-soon-hero {
+                padding: 80px 0;
+                margin-top: 80px;
+                min-height: 60vh;
+            }
+            
+            .coming-soon-hero h1 {
+                font-size: 3rem;
+            }
+            
+            .coming-soon-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .cta-content h2 {
+                font-size: 2.2rem;
+            }
+            
+            .shop-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .shop-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .coming-soon-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .shop-now-content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-img">
+                        <a href="index.html"><img src="imgaes/logo.jpeg" alt="Serenique Trezza Logo"></a>
+                    </div>
+                    <div class="logo-text">S<span>ERENIQUE</span>-T<span>REZZA</span></div>
+                    <div class="logo-tagline">BEADED ELEGANCE</div>
+                </div>
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="gallery.html">Shop Now</a></li>
+                    <li><a href="deals.html" class="active">Deals</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Coming Soon Hero Section -->
+    <section class="coming-soon-hero">
+        <div class="coming-soon-content">
+            <h1>Coming Soon</h1>
+            <p>We're preparing something special for you! Get ready for exclusive deals, limited-time offers, and exciting promotions on our handcrafted beaded accessories.</p>
+            <a href="gallery.html" class="btn">Shop Current Collection</a>
+        </div>
+    </section>
+
+    <!-- What to Expect Section -->
+    <section class="coming-soon-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>What to Expect</h2>
+                <p>Our special deals section will feature seasonal discounts, bundle offers, flash sales, and exclusive members-only promotions.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item card-hover">
+                        <div class="feature-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h3>Exclusive Discounts</h3>
+                        <p>Special prices only available for limited time periods</p>
+                    </div>
+                    <div class="feature-item card-hover">
+                        <div class="feature-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>Bundle Offers</h3>
+                        <p>Get more value with curated jewelry sets at special prices</p>
+                    </div>
+                    <div class="feature-item card-hover">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Flash Sales</h3>
+                        <p>Limited-time offers on select collections</p>
+                    </div>
+                    <div class="feature-item card-hover">
+                        <div class="feature-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>VIP Access</h3>
+                        <p>Early access to sales for loyal customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Now Section -->
+    <section class="shop-now-section">
+        <div class="container">
+            <div class="shop-now-content">
+                <h2>Don't Want to Wait?</h2>
+                <p>Explore our beautiful collection of handcrafted beaded accessories while you wait for our special deals.</p>
+                
+                <div class="shop-buttons">
+                    <a href="gallery.html" class="btn">Browse Full Collection</a>
+                    <a href="https://wa.me/923359997124" target="_blank" class="btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-text">S<span>ERENIQUE</span>-T<span>REZZA</span></div>
+                        <div class="logo-tagline">BEADED ELEGANCE</div>
+                    </div>
+                    <p>Handcrafted beaded accessories that celebrate individuality and timeless beauty. Each piece is meticulously woven with care and passion in Karachi.</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/sereniquetrezza" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/serenique_trezza._.0" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/923359997124" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://tiktok.com/@sereniquetrezza" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="gallery.html">Shop Collection</a></li>
+                        <li><a href="index.html#reviews">Customer Reviews</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/923359997124" target="_blank">Order via WhatsApp</a></li>
+                        <li><a href="index.html#contact">Custom Design Request</a></li>
+                        <li><a href="#">Shipping & Delivery Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Policies</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2026 <strong>Serenique Trezza</strong>. All rights reserved. | Handcrafted with love in Karachi, Pakistan</p>
+                    <p style="margin-top: 10px; font-size: 0.85rem;">Design & Development by Serenique Trezza Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/923359997124" target="_blank" class="whatsapp-float">
+        <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="whatsapp-text">
+            Contact on WhatsApp
+        </div>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add navigation functionality
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (mobileToggle && navLinks) {
+                mobileToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    mobileToggle.innerHTML = navLinks.classList.contains('active')
+                        ? '<i class="fas fa-times"></i>'
+                        : '<i class="fas fa-bars"></i>';
+                    
+                    // Prevent body scroll when menu is open on mobile
+                    if (navLinks.classList.contains('active') && window.innerWidth <= 768) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+                
+                // Close mobile menu when clicking a link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                            mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                            document.body.style.overflow = 'auto';
+                        }
+                    });
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (this.getAttribute('href') === '#') return;
+                    
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    
+                    if (targetId === '#') return;
+                    
+                    if (targetId.startsWith('#')) {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 70,
+                                behavior: 'smooth'
+                            });
+                            
+                            // Close mobile menu if open
+                            if (navLinks && navLinks.classList.contains('active')) {
+                                navLinks.classList.remove('active');
+                                if (mobileToggle) {
+                                    mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                                }
+                                document.body.style.overflow = 'auto';
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -520,173 +520,173 @@ function orderOnWhatsApp(productName, productPrice, productDescription) {
     return false;
 }
 
-// Product Data - COMPLETE UPDATED VERSION WITH ALL PRODUCTS
+// Product Data - COMPLETE UPDATED VERSION WITH ALL PRODUCTS (PRICES UPDATED)
 const productData = {
-    // Original products
+    // Original products - PRICES UPDATED
     1: {
         title: "Soul Magnet",
         image: "imgaes/28soul-magnet.jpeg",
-        price: "PKR 2,500",
+        price: "PKR 370",
         description: "Bold, dramatic, and undeniably luxurious. This statement piece features a striking zig-zag architecture of jet-black faceted crystals encased in a rich border of shimmering gold-tone beads. It is designed for the woman who wants her jewelry to command the room with a blend of mystery and opulence."
     },
     2: {
         title: "Monarch Whisper",
         image: "imgaes/1monarch.jpeg",
-        price: "PKR 1,800",
+        price: "PKR 250",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional."
     },
     3: {
         title: "Monarch Whisper - Variation 2",
         image: "imgaes/2monarch.jpeg",
-        price: "PKR 1,800",
+        price: "PKR 250",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional."
     },
     4: {
         title: "Monarch Whisper - Variation 3",
         image: "imgaes/3monarch.jpeg",
-        price: "PKR 1,800",
+        price: "PKR 250",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional."
     },
     5: {
         title: "Monarch Whisper - Variation 4",
         image: "imgaes/4monarch.jpeg",
-        price: "PKR 1,800",
+        price: "PKR 250",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional."
     },
     6: {
         title: "The Heartline Rhythm",
         image: "imgaes/5heartline.jpeg",
-        price: "PKR 1,900",
+        price: "PKR 250",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional."
     },
     7: {
         title: "The Crystal Whisper",
         image: "imgaes/6crystal-whis.jpeg",
-        price: "PKR 2,200",
+        price: "PKR 270",
         description: "A delicate and luminous bracelet featuring shimmering pink crystal beads hand-strung along a fine silver-tone chain. It is finished with a charming, dangling cherry blossom charm and a crystal tassel, perfect for adding a touch of ethereal sparkle to your wrist."
     },
     8: {
         title: "Lumina Duo",
         image: "imgaes/7lumina-duo.jpeg",
-        price: "PKR 3,500",
+        price: "PKR 250",
         description: "A dreamy pair of pearl bracelets featuring translucent butterfly charms and delicate silver chains. The set includes two styles: one with soft lilac accents and one with fresh mint accents. Designed to be stacked together, shared with a friend, or worn individually for a sweet, cottagecore touch."
     },
     9: {
         title: "Pastel Cascade",
         image: "imgaes/8pastel-cas.jpeg",
-        price: "PKR 1,950",
+        price: "PKR 250",
         description: "A delightful beaded bracelet featuring a charming spectrum of soft, translucent pastel hues. Finished with a delicate silver four-leaf clover charm for a touch of luck and everyday joy."
     },
     10: {
         title: "Classic Gem Link",
         image: "imgaes/10classic-gem.jpeg",
-        price: "PKR 2,100",
+        price: "PKR 250",
         description: "A refined, minimalist bracelet featuring a continuous line of vibrant, perfectly polished beads connected by a delicate round rings. Choose your hue to add a subtle, endless glimmer to your wrist."
     },
     11: {
         title: "Stardust Stream",
         image: "imgaes/11stardust-stre.jpeg",
-        price: "PKR 2,300",
+        price: "PKR 260",
         description: "A whimsical gold bracelet featuring sparkling pink gemstone beads and a playful fringe of dangling gold star charms. An elegant and dreamy piece that captures the light of the night sky."
     },
     12: {
         title: "Heartstring Pastel",
         image: "imgaes/12heartstring-pas.jpeg",
-        price: "PKR 1,850",
+        price: "PKR 200",
         description: "A charming pastel beaded bracelet finished with a soft heart accent, designed to bring joy, color, and gentle elegance to your everyday look."
     },
     13: {
         title: "Duo Serenity Stretch",
         image: "imgaes/13duo sernity-str.jpeg",
-        price: "PKR 2,400",
+        price: "PKR 250",
         description: "An effortlessly chic stretch bracelet featuring a harmonious rhythm of soft celestial beads. Finished with a delicate charm cluster, this comfortable piece symbolizes peace and perfect balance."
     },
     14: {
         title: "Duo Serenity Stretch - Variation",
         image: "imgaes/14duo sernity-str.jpeg",
-        price: "PKR 2,400",
+        price: "PKR 250",
         description: "Another beautiful variation of this serene bracelet featuring a harmonious rhythm of soft celestial beads. Finished with a delicate charm cluster, this comfortable piece symbolizes peace and perfect balance."
     },
     15: {
         title: "Ameline Serenity",
         image: "imgaes/15ameline-ser.jpeg",
-        price: "PKR 2,600",
+        price: "PKR 320",
         description: "A graceful blend of pastel beads and delicate charms, the Ameline Serenity Bracelet is designed to reflect softness, elegance, and timeless beauty. Perfect for everyday wear or special moments, it adds a gentle touch of charm to any look."
     },
     16: {
         title: "Aurora Whisper",
         image: "imgaes/16aurora-whi.jpeg",
-        price: "PKR 2,700",
+        price: "PKR 270",
         description: "A delicate gold chain bracelet adorned with luminous opal-like beads, exuding timeless elegance and subtle charm."
     },
     17: {
         title: "Celestial Kitty",
         image: "imgaes/17calestial-kit.jpeg",
-        price: "PKR 2,800",
+        price: "PKR 250",
         description: "Embrace a touch of whimsical nostalgia with our Celestial Kitty. Featuring a delicate blend of pastel star charms, iridescent pearls, and a signature enamel kitty pendant, this piece is handcrafted on a silver-tone equipment's to add a soft, dreamy sparkle to your everyday style."
     },
     18: {
         title: "Emerald Mist",
         image: "imgaes/18emerald-mis.jpeg",
-        price: "PKR 2,500",
+        price: "PKR 250",
         description: "Capture the essence of a hidden forest with our Emerald Mist. Featuring artisan-crafted cracked glass beads in a soothing sage green, each bead is delicately linked by hand with gold-tone hardware for a look that is both earthy and refined."
     },
     19: {
         title: "Meadow and Mist",
         image: "imgaes/19meadow-mis.jpeg",
-        price: "PKR 3,200",
+        price: "PKR 300",
         description: "Celebrate harmony with our Meadow and Mist. This exquisite pair features hand-selected cracked-glass beads in refreshing lime green and tranquil sky blue, woven together with lustrous faux pearls and radiant gold-toned accents for a timeless, elegant finish."
     },
     20: {
         title: "Starlight Filigree",
         image: "imgaes/20starlight-fil.jpeg",
-        price: "PKR 2,900",
+        price: "PKR 260",
         description: "Capture the magic of a clear night sky with our Starlight Filigree. This delicate silver-toned bracelet features a constellation of dainty star charms that dance along a fine link chain, offering a subtle yet enchanting sparkle to your wrist."
     },
     21: {
         title: "Pearlescent Petal",
         image: "imgaes/21pearlescent-pet.jpeg",
-        price: "PKR 3,000",
+        price: "PKR 200",
         description: "Exude timeless grace with our Pearlescent Petal. Featuring a seamless strand of lustrous white pearls and a delicate enamel flower charm with a crystal heart, this piece is a classic staple for the modern romantic."
     },
     22: {
         title: "Ethereal Heart Link",
         image: "imgaes/22ethereal-hea.jpeg",
-        price: "PKR 2,700",
+        price: "PKR 250",
         description: "Celebrate a spectrum of joy with our Ethereal Heart Link. A vibrant dance of colorful cracked-glass beads meets a dazzling crystal heart centerpiece, hand-linked on a polished silver-tone chain for a playful yet sophisticated finish."
     },
     23: {
         title: "Scarlet Dreamscape",
         image: "imgaes/23scarlet-dre.jpeg",
-        price: "PKR 2,800",
+        price: "PKR 300",
         description: "Make a romantic statement with our Scarlet Dreamscape. Featuring a striking half-and-half design of vibrant scarlet crystals and frosted white beads, this piece is finished with a charming red enamel heart for a touch of classic elegance."
     },
     24: {
         title: "Signature Petal",
         image: "imgaes/24signature-pet.jpeg",
-        price: "PKR 3,500",
+        price: "PKR 270",
         description: "A poetic symbol of trust and devotion. This duo features one bracelet of translucent sea-foam blue and another of soft rose-quartz pink. Adorned with a vintage-inspired silver key and a matching heart-engraved lock, these pieces represent the one person who holds the key to your heart. Elegant, sentimental, and perfectly paired."
     },
     25: {
         title: "Winter Willow",
         image: "imgaes/25winter-willow.jpeg",
-        price: "PKR 2,900",
+        price: "PKR 320",
         description: "A sophisticated play of cool tones, this piece features alternating clusters of soft sky-blue and charcoal-grey faceted beads. Accented with polished silver-tone spacers, the fluid, organic silhouette mimics the gentle movement of waves. It's a modern statement of calm and confidence, perfect for elevating a minimalist look."
     },
     26: {
         title: "Moonblush Strand",
         image: "imgaes/26moonblush-str.jpeg",
-        price: "PKR 3,100",
+        price: "PKR 350",
         description: "Elevate your everyday stack with this intricate woven design. Combining the soft glow of glass pearls with the brilliant sparkle of champagne bicone crystals, this bracelet offers a modern twist on classic elegance. Finished with an adjustable silver chain for the perfect fit."
     },
     27: {
         title: "Unlocked Soul",
         image: "imgaes/27unlocked-soul.jpeg",
-        price: "PKR 3,800",
+        price: "PKR 390",
         description: "A poetic symbol of trust and devotion. This duo features one bracelet of translucent sea-foam blue and another of soft rose-quartz pink. Adorned with a vintage-inspired silver key and a matching heart-engraved lock, these pieces represent the one person who holds the key to your heart. Elegant, sentimental, and perfectly paired."
     },
     
-    // New combined products from gallery
+    // New combined products from gallery - PRICES UPDATED
     "monarch-whisper": {
         title: "Monarch Whisper Bracelet Collection",
         images: [
@@ -695,7 +695,7 @@ const productData = {
             "imgaes/4monarch.jpeg",
             "imgaes/3monarch.jpeg"
         ],
-        price: "PKR 1,800",
+        price: "PKR 250",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional. Available in 4 stylish variations."
     },
     
@@ -705,32 +705,32 @@ const productData = {
             "imgaes/13duo sernity-str.jpeg",
             "imgaes/14duo sernity-str.jpeg"
         ],
-        price: "PKR 2,400",
+        price: "PKR 250",
         description: "An effortlessly chic stretch bracelet featuring a harmonious rhythm of soft celestial beads. Finished with a delicate charm cluster, this comfortable piece symbolizes peace and perfect balance. Available in 2 beautiful variations."
     },
     
     "dewdrop-spritz": {
         title: "Dewdrop Spritz Bracelet",
-        image: "imgaes/dewdrop-spritz.jpeg",
-        price: "PKR 2,100",
+        image: "imgaes/9dewdrop-spr.jpeg",
+        price: "PKR 260",
         description: "A whisper-light gold chain adorned with delicate, multi-colored gemstone drops that sparkle like scattered dewdrops. This delicate piece adds a subtle, luminous touch to any ensemble, perfect for day-to-night elegance."
     },
     
     "eclipse-weave": {
         title: "Eclipse Weave Bracelet",
         image: "imgaes/eclipse-weave.jpeg",
-        price: "PKR 2,800",
+        price: "PKR 250",
         description: "Bold, dramatic, and undeniably luxurious statement piece with jet-black faceted crystals and gold-tone beads. This piece makes a powerful statement while maintaining an elegant sophistication."
     },
     
     "marigold": {
         title: "Marigold Bracelet",
         image: "imgaes/marigold-bracelet.jpeg",
-        price: "PKR 2,200",
+        price: "PKR 300",
         description: "A delicate, scalloped-style bracelet featuring creamy white pearls and vibrant orange crystal accents. The warm, sunny tones evoke the joy of a summer garden, while the elegant design ensures timeless appeal."
     },
     
-    // Earrings
+    // Earrings - PRICES UPDATED
     "amore-heartlets": {
         title: "The Amore Heartlets Earrings Collection",
         images: [
@@ -739,42 +739,42 @@ const productData = {
             "imgaes/The amore heartlets3.jpeg",
             "imgaes/The amore heartlets4.jpeg"
         ],
-        price: "PKR 1,900",
+        price: "PKR 200",
         description: "Simple, sweet, and radiating love. These charming drop earrings feature translucent, ruby-red heart charms with a subtle crystalline shimmer. Suspended from elegant gold-toned French hooks, they are designed to add a playful yet sophisticated pop of color to your look. Whether it's a gift for a loved one or a treat for yourself, these hearts are a wearable reminder of passion and joy. Available in 4 stunning color variations."
     },
     
     "lunar-dangle": {
         title: "Lunar Dangle Earrings",
-        image: "imgaes/dangle6.jpeg",
-        price: "PKR 2,300",
+        image: "imgaes/Lunar dangle6.jpeg",
+        price: "PKR 320",
         description: "These exquisite drop earrings feature a spiraling staircase of lustrous white pearls that gracefully wind around a delicate gold-toned chain. Finished with a dainty pearl terminal, they offer a sophisticated vertical silhouette that catches the light with every turn. A timeless choice for brides, evening galas, or adding a touch of classic luxury to your daily ensemble."
     },
     
     "royal-periwinkle": {
         title: "Royal Periwinkle Earrings",
-        image: "imgaes/periwinkle8.jpeg",
-        price: "PKR 2,100",
+        image: "imgaes/Royal periwinkle8.jpeg",
+        price: "PKR 300",
         description: "Add a touch of floral elegance to your look with these handcrafted woven earrings. Featuring a soft periwinkle blue beadwork base, shimmering gold accents, and a delicate pearl topper, these lightweight hoops are finished with gold-toned hooks for a timeless, romantic aesthetic."
     },
     
     "sorbet-halo": {
         title: "Sorbet Halo Earrings",
-        image: "imgaes/halo7.jpeg",
-        price: "PKR 2,400",
+        image: "imgaes/Sorbet halo7.jpeg",
+        price: "PKR 290",
         description: "A radiant cascade of pastel-hued beads in soft pink, lavender, and mint arranged in a mesmerizing gradient. These delicate drop earrings are finished with a luminous crystal teardrop and suspended from a dainty gold hook, offering a dreamy, ethereal sparkle that's perfect for spring and summer."
     },
     
     "alabaster-belle": {
         title: "The Alabaster Belle Earrings",
-        image: "imgaes/belle9.jpeg",
-        price: "PKR 2,200",
+        image: "imgaes/The alabaster belle9.jpeg",
+        price: "PKR 300",
         description: "Pure, playful, and perfectly poised. These whimsical drop earrings feature a matte white coquette bow that suspends two delicate lily-of-the-valley bell charms. Strung on slender silver-tone chains, they offer a graceful, dancing movement that captures a soft, cottagecore aesthetic."
     },
     
     "zephyr-leaf": {
         title: "The Zephyr Leaf Earrings",
-        image: "imgaes/leaf5.jpeg",
-        price: "PKR 2,000",
+        image: "imgaes/Zephyr leaf5.jpeg",
+        price: "PKR 280",
         description: "Embrace the beauty of nature with these delicate golden leaf drops. Each earring features a finely detailed, filigree leaf charm suspended from a gold-toned chain, finished with a tiny, lustrous pearl terminal. These lightweight earrings offer a whimsical yet sophisticated aesthetic, making them the perfect accessory for a sun-drenched afternoon or an ethereal evening look."
     }
 };
@@ -1205,3 +1205,9 @@ window.openModal = openModal;
 window.closeModal = closeModal;
 window.orderOnWhatsApp = orderOnWhatsApp;
 
+function openWhatsApp() {
+    const whatsappNumber = '923359997124';
+    const message = encodeURIComponent("Hello Serenique Trezza! I'm interested in your beaded accessories collection. Could you please provide more information?");
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+    window.open(whatsappURL, '_blank');
+}
