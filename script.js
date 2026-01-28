@@ -1,5 +1,126 @@
-// JavaScript for Serenique Trezza Website - UPDATED WITH FIXES
+// JavaScript for Serenique Trezza Website - FIXED VERSION
+// ========== MINIMAL REVIEWS SLIDER ==========
 
+// Initialize Minimal Reviews Slider
+function initReviewsSwiper() {
+    if (document.querySelector('.reviews-swiper')) {
+        const reviewsSwiper = new Swiper('.reviews-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.review-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.review-next',
+                prevEl: '.review-preview',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+            },
+            on: {
+                init: function () {
+                    console.log('Minimal Reviews Slider initialized');
+                }
+            }
+        });
+        
+        return reviewsSwiper;
+    }
+    return null;
+}
+
+// Add keyboard navigation
+function addReviewsKeyboardNav(swiper) {
+    if (!swiper) return;
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            swiper.slidePrev();
+        } else if (e.key === 'ArrowRight') {
+            swiper.slideNext();
+        }
+    });
+}
+
+// Add scroll animation
+function animateReviewsOnScroll() {
+    const reviewsSection = document.getElementById('reviews');
+    if (!reviewsSection) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const slides = entry.target.querySelectorAll('.review-slide');
+                slides.forEach((slide, index) => {
+                    setTimeout(() => {
+                        slide.style.opacity = '1';
+                        slide.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    observer.observe(reviewsSection);
+}
+
+// Initialize on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+    // ... existing code ...
+    
+    // Initialize Reviews Slider
+    if (typeof Swiper !== 'undefined') {
+        const reviewsSwiper = initReviewsSwiper();
+        addReviewsKeyboardNav(reviewsSwiper);
+        animateReviewsOnScroll();
+    } else {
+        // Wait for Swiper to load
+        const checkSwiper = setInterval(() => {
+            if (typeof Swiper !== 'undefined') {
+                const reviewsSwiper = initReviewsSwiper();
+                addReviewsKeyboardNav(reviewsSwiper);
+                animateReviewsOnScroll();
+                clearInterval(checkSwiper);
+            }
+        }, 100);
+    }
+    
+    // ... existing code ...
+});
+
+// Add smooth entrance animation CSS
+const style = document.createElement('style');
+style.textContent = `
+    .review-slide {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    
+    .reviews .review-slide:nth-child(1) { transition-delay: 0.1s; }
+    .reviews .review-slide:nth-child(2) { transition-delay: 0.2s; }
+    .reviews .review-slide:nth-child(3) { transition-delay: 0.3s; }
+    .reviews .review-slide:nth-child(4) { transition-delay: 0.4s; }
+    .reviews .review-slide:nth-child(5) { transition-delay: 0.5s; }
+    .reviews .review-slide:nth-child(6) { transition-delay: 0.6s; }
+    .reviews .review-slide:nth-child(7) { transition-delay: 0.7s; }
+    .reviews .review-slide:nth-child(8) { transition-delay: 0.8s; }
+`;
+document.head.appendChild(style);
 // Mobile Navigation Toggle
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
@@ -399,8 +520,9 @@ function orderOnWhatsApp(productName, productPrice, productDescription) {
     return false;
 }
 
-// Product Data - UPDATED
+// Product Data - COMPLETE UPDATED VERSION WITH ALL PRODUCTS
 const productData = {
+    // Original products
     1: {
         title: "Soul Magnet",
         image: "imgaes/28soul-magnet.jpeg",
@@ -409,25 +531,25 @@ const productData = {
     },
     2: {
         title: "Monarch Whisper",
-        image: "imgaes/2monarch.jpeg",
+        image: "imgaes/1monarch.jpeg",
         price: "PKR 1,800",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional."
     },
     3: {
         title: "Monarch Whisper - Variation 2",
-        image: "imgaes/1monarch.jpeg",
+        image: "imgaes/2monarch.jpeg",
         price: "PKR 1,800",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional."
     },
     4: {
         title: "Monarch Whisper - Variation 3",
-        image: "imgaes/4monarch.jpeg",
+        image: "imgaes/3monarch.jpeg",
         price: "PKR 1,800",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional."
     },
     5: {
         title: "Monarch Whisper - Variation 4",
-        image: "imgaes/3monarch.jpeg",
+        image: "imgaes/4monarch.jpeg",
         price: "PKR 1,800",
         description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional."
     },
@@ -562,6 +684,98 @@ const productData = {
         image: "imgaes/27unlocked-soul.jpeg",
         price: "PKR 3,800",
         description: "A poetic symbol of trust and devotion. This duo features one bracelet of translucent sea-foam blue and another of soft rose-quartz pink. Adorned with a vintage-inspired silver key and a matching heart-engraved lock, these pieces represent the one person who holds the key to your heart. Elegant, sentimental, and perfectly paired."
+    },
+    
+    // New combined products from gallery
+    "monarch-whisper": {
+        title: "Monarch Whisper Bracelet Collection",
+        images: [
+            "imgaes/2monarch.jpeg",
+            "imgaes/1monarch.jpeg", 
+            "imgaes/4monarch.jpeg",
+            "imgaes/3monarch.jpeg"
+        ],
+        price: "PKR 1,800",
+        description: "A beautiful gold-tone bracelet that symbolizes enduring love and life. Each piece features a delicate chain accented with a heart charm flowing into a smooth heartbeat line. Perfect for couples, best friends, simply for individuals or as a thoughtful appreciation gift for a medical professional. Available in 4 stylish variations."
+    },
+    
+    "duo-serenity": {
+        title: "Duo Serenity Stretch Bracelet Collection",
+        images: [
+            "imgaes/13duo sernity-str.jpeg",
+            "imgaes/14duo sernity-str.jpeg"
+        ],
+        price: "PKR 2,400",
+        description: "An effortlessly chic stretch bracelet featuring a harmonious rhythm of soft celestial beads. Finished with a delicate charm cluster, this comfortable piece symbolizes peace and perfect balance. Available in 2 beautiful variations."
+    },
+    
+    "dewdrop-spritz": {
+        title: "Dewdrop Spritz Bracelet",
+        image: "imgaes/dewdrop-spritz.jpeg",
+        price: "PKR 2,100",
+        description: "A whisper-light gold chain adorned with delicate, multi-colored gemstone drops that sparkle like scattered dewdrops. This delicate piece adds a subtle, luminous touch to any ensemble, perfect for day-to-night elegance."
+    },
+    
+    "eclipse-weave": {
+        title: "Eclipse Weave Bracelet",
+        image: "imgaes/eclipse-weave.jpeg",
+        price: "PKR 2,800",
+        description: "Bold, dramatic, and undeniably luxurious statement piece with jet-black faceted crystals and gold-tone beads. This piece makes a powerful statement while maintaining an elegant sophistication."
+    },
+    
+    "marigold": {
+        title: "Marigold Bracelet",
+        image: "imgaes/marigold-bracelet.jpeg",
+        price: "PKR 2,200",
+        description: "A delicate, scalloped-style bracelet featuring creamy white pearls and vibrant orange crystal accents. The warm, sunny tones evoke the joy of a summer garden, while the elegant design ensures timeless appeal."
+    },
+    
+    // Earrings
+    "amore-heartlets": {
+        title: "The Amore Heartlets Earrings Collection",
+        images: [
+            "imgaes/The amore heartlets1.jpeg",
+            "imgaes/The amore heartlets2.jpeg",
+            "imgaes/The amore heartlets3.jpeg",
+            "imgaes/The amore heartlets4.jpeg"
+        ],
+        price: "PKR 1,900",
+        description: "Simple, sweet, and radiating love. These charming drop earrings feature translucent, ruby-red heart charms with a subtle crystalline shimmer. Suspended from elegant gold-toned French hooks, they are designed to add a playful yet sophisticated pop of color to your look. Whether it's a gift for a loved one or a treat for yourself, these hearts are a wearable reminder of passion and joy. Available in 4 stunning color variations."
+    },
+    
+    "lunar-dangle": {
+        title: "Lunar Dangle Earrings",
+        image: "imgaes/dangle6.jpeg",
+        price: "PKR 2,300",
+        description: "These exquisite drop earrings feature a spiraling staircase of lustrous white pearls that gracefully wind around a delicate gold-toned chain. Finished with a dainty pearl terminal, they offer a sophisticated vertical silhouette that catches the light with every turn. A timeless choice for brides, evening galas, or adding a touch of classic luxury to your daily ensemble."
+    },
+    
+    "royal-periwinkle": {
+        title: "Royal Periwinkle Earrings",
+        image: "imgaes/periwinkle8.jpeg",
+        price: "PKR 2,100",
+        description: "Add a touch of floral elegance to your look with these handcrafted woven earrings. Featuring a soft periwinkle blue beadwork base, shimmering gold accents, and a delicate pearl topper, these lightweight hoops are finished with gold-toned hooks for a timeless, romantic aesthetic."
+    },
+    
+    "sorbet-halo": {
+        title: "Sorbet Halo Earrings",
+        image: "imgaes/halo7.jpeg",
+        price: "PKR 2,400",
+        description: "A radiant cascade of pastel-hued beads in soft pink, lavender, and mint arranged in a mesmerizing gradient. These delicate drop earrings are finished with a luminous crystal teardrop and suspended from a dainty gold hook, offering a dreamy, ethereal sparkle that's perfect for spring and summer."
+    },
+    
+    "alabaster-belle": {
+        title: "The Alabaster Belle Earrings",
+        image: "imgaes/belle9.jpeg",
+        price: "PKR 2,200",
+        description: "Pure, playful, and perfectly poised. These whimsical drop earrings feature a matte white coquette bow that suspends two delicate lily-of-the-valley bell charms. Strung on slender silver-tone chains, they offer a graceful, dancing movement that captures a soft, cottagecore aesthetic."
+    },
+    
+    "zephyr-leaf": {
+        title: "The Zephyr Leaf Earrings",
+        image: "imgaes/leaf5.jpeg",
+        price: "PKR 2,000",
+        description: "Embrace the beauty of nature with these delicate golden leaf drops. Each earring features a finely detailed, filigree leaf charm suspended from a gold-toned chain, finished with a tiny, lustrous pearl terminal. These lightweight earrings offer a whimsical yet sophisticated aesthetic, making them the perfect accessory for a sun-drenched afternoon or an ethereal evening look."
     }
 };
 
@@ -613,32 +827,152 @@ if (filterButtons.length > 0 && galleryItems.length > 0) {
     });
 }
 
-// Modal functionality - FIXED
+// Swiper instance
+let productSwiper = null;
+
+// Initialize Swiper
+function initSwiper() {
+    if (document.getElementById('productSwiper')) {
+        productSwiper = new Swiper('#productSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: false,
+            speed: 400,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+            }
+        });
+    }
+}
+
+// Modal functionality - FIXED VERSION
 function openModal(productId) {
     const product = productData[productId];
-    if (product && modal) {
+    
+    if (!product) {
+        console.error(`Product with ID "${productId}" not found in productData`);
+        showNotification('Product details not available at the moment.', 'error');
+        return;
+    }
+    
+    if (modal) {
+        // Set modal content
         modalTitle.textContent = product.title;
         modalProductName.textContent = product.title;
         modalDescription.textContent = product.description;
         modalPrice.textContent = `Price: ${product.price}`;
+        
+        // Clear existing slides
+        const swiperWrapper = document.getElementById('swiperWrapper');
+        if (swiperWrapper) {
+            swiperWrapper.innerHTML = '';
+        }
+        
+        // Destroy existing Swiper instance
+        if (productSwiper) {
+            productSwiper.destroy();
+            productSwiper = null;
+        }
+        
+        // Check if product has multiple images
+        const hasMultipleImages = product.images && product.images.length > 1;
+        
+        // Get or create slider container
+        let sliderContainer = document.querySelector('.modal-img-slider');
+        if (!sliderContainer) {
+            sliderContainer = document.createElement('div');
+            sliderContainer.className = 'modal-img-slider';
+            sliderContainer.innerHTML = `
+                <div class="swiper" id="productSwiper">
+                    <div class="swiper-wrapper" id="swiperWrapper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            `;
+            
+            // Insert before modal text
+            const modalBody = document.querySelector('.modal-body');
+            const modalImg = document.querySelector('.modal-img');
+            if (modalImg) {
+                modalBody.insertBefore(sliderContainer, modalImg.nextSibling);
+            }
+        }
+        
+        if (hasMultipleImages) {
+            // Show slider and hide regular image
+            sliderContainer.classList.add('active');
+            if (modalImage) {
+                modalImage.style.display = 'none';
+            }
+            
+            // Create slides
+            product.images.forEach((imageSrc, index) => {
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+                
+                const img = document.createElement('img');
+                img.src = imageSrc;
+                img.alt = `${product.title} - Variation ${index + 1}`;
+                img.loading = 'lazy';
+                
+                img.onerror = function() {
+                    this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23f0f0f0"/><text x="200" y="150" font-family="Arial" font-size="14" fill="%23666" text-anchor="middle">Product Image</text></svg>';
+                };
+                
+                slide.appendChild(img);
+                if (swiperWrapper) {
+                    swiperWrapper.appendChild(slide);
+                }
+            });
 
-        // Set modal image
-        if (modalImage) {
-            modalImage.src = product.image;
-            modalImage.alt = product.title;
-
-            // Fix for image loading
-            modalImage.onload = function () {
-                console.log('Modal image loaded:', product.image);
-            };
-
-            modalImage.onerror = function () {
-                console.log('Modal image failed to load:', product.image);
-                this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23f0f0f0"/><text x="200" y="150" font-family="Arial" font-size="14" fill="%23666" text-anchor="middle">Product Image</text></svg>';
-            };
+            // Initialize Swiper
+            setTimeout(() => {
+                initSwiper();
+            }, 100);
+            
+            // Add has-slider class to modal body
+            document.querySelector('.modal-body').classList.add('has-slider');
+        } else {
+            // Use single image
+            if (modalImage) {
+                const imageSrc = product.image || (product.images && product.images[0]) || '';
+                modalImage.src = imageSrc;
+                modalImage.alt = product.title;
+                modalImage.style.display = 'block';
+                
+                modalImage.onerror = function() {
+                    this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23f0f0f0"/><text x="200" y="150" font-family="Arial" font-size="14" fill="%23666" text-anchor="middle">Product Image</text></svg>';
+                };
+            }
+            
+            // Hide slider if it exists
+            sliderContainer.classList.remove('active');
+            
+            // Remove has-slider class
+            document.querySelector('.modal-body').classList.remove('has-slider');
         }
 
-        // Set WhatsApp link for ordering - NO IMAGE URL
+        // Set WhatsApp link for ordering
         const whatsappMessage = `Hello Serenique Trezza!\n\nI want to order this product:\n\n*Product Name:* ${product.title}\n*Price:* ${product.price}\n*Description:* ${product.description}\n\nPlease confirm availability and provide payment details.`;
 
         if (whatsappOrderBtn) {
@@ -680,7 +1014,7 @@ if (viewButtons.length > 0) {
     if (window.innerWidth <= 768) {
         galleryItems.forEach(item => {
             item.addEventListener('click', (e) => {
-                if (!e.target.classList.contains('view-btn') && !e.target.classList.contains('order-btn')) {
+                if (!e.target.classList.contains('view-btn') && !e.target.classList.contains('order-btn') && !e.target.closest('.variation-badge')) {
                     const viewBtn = item.querySelector('.view-btn');
                     if (viewBtn) {
                         const productId = viewBtn.getAttribute('data-id');
@@ -704,9 +1038,9 @@ if (orderButtons.length > 0) {
                 // Get image element from the gallery item
                 const galleryItem = button.closest('.gallery-item');
                 const imgElement = galleryItem.querySelector('img');
-                const productName = imgElement.getAttribute('data-name') || product.title;
-                const productPrice = imgElement.getAttribute('data-price') || product.price;
-                const productDescription = imgElement.getAttribute('data-description') || product.description;
+                const productName = product.title;
+                const productPrice = product.price;
+                const productDescription = product.description;
 
                 // Call function WITHOUT image parameter
                 orderOnWhatsApp(productName, productPrice, productDescription);
@@ -721,6 +1055,23 @@ function closeModal() {
         modal.classList.remove('active');
         document.body.style.overflow = 'auto';
         document.documentElement.style.overflow = 'auto';
+        
+        // Destroy Swiper instance
+        if (productSwiper) {
+            productSwiper.destroy();
+            productSwiper = null;
+        }
+        
+        // Remove has-slider class
+        const modalBody = document.querySelector('.modal-body');
+        if (modalBody) {
+            modalBody.classList.remove('has-slider');
+        }
+        
+        // Show regular image again
+        if (modalImage) {
+            modalImage.style.display = 'block';
+        }
     }
 }
 
@@ -791,6 +1142,16 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         removeAllFilters();
     }, 1000);
+    
+    // Load Swiper if not already loaded
+    if (typeof Swiper === 'undefined') {
+        const swiperScript = document.createElement('script');
+        swiperScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+        swiperScript.onload = function() {
+            console.log('Swiper loaded successfully');
+        };
+        document.head.appendChild(swiperScript);
+    }
 });
 
 // Handle window resize
@@ -838,3 +1199,9 @@ window.addEventListener('resize', () => {
 
 // Initialize on load
 handleResize();
+
+// Expose functions to global scope
+window.openModal = openModal;
+window.closeModal = closeModal;
+window.orderOnWhatsApp = orderOnWhatsApp;
+

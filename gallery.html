@@ -1,520 +1,587 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Serenique Trezza Beaded Jewelry Collection</title>
-    <meta name="description" content="Explore our complete collection of handcrafted beaded jewelry. Necklaces, bracelets, earrings, and more - each piece tells a unique story.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="imgaes/logo.jpeg">
-</head>
-<body>
-    <!-- Header & Navigation -->
-    <header id="header">
-        <div class="container">
-            <div class="nav-container">
-                <div class="logo">
-                    <div class="logo-img">
-                        <a href="index.html"><img src="imgaes/logo.jpeg" alt="Serenique Trezza Logo"></a>
-                    </div>
-                    <div class="logo-text">S<span>ERENIQUE</span>-T<span>REZZA</span></div>
-                    <div class="logo-tagline">BEADED ELEGANCE</div>
-                </div>
-                <div class="mobile-toggle" id="mobileToggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="gallery.html" class="active">Gallery</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <!-- Gallery Hero -->
-    <section class="gallery-hero">
-        <div class="container">
-            <h1 class="fade-in-up">Our Complete Collection</h1>
-            <p class="fade-in-up-delay">Explore our curated selection of handcrafted beaded jewelry. Each piece is designed with elegance and sophistication in mind.</p>
-        </div>
-    </section>
-
-    <!-- Gallery Filter -->
-    <section class="gallery-filter-section">
-        <div class="container">
-            <div class="gallery-filter">
-                <button class="filter-btn active" data-filter="all">All Collections</button>
-                <button class="filter-btn" data-filter="bracelets">Bracelets</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Grid -->
-    <section class="gallery-grid-section">
-        <div class="container">
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- Product 1 - Soul Magnet -->
-                <div class="gallery-item" data-category="bracelets" data-id="1">
-                    <img src="imgaes/28soul-magnet.jpeg" alt="Soul Magnet Bracelet" 
-                         data-name="Soul Magnet" 
-                         data-price="PKR 2,500"
-                         data-description="Bold, dramatic, and undeniably luxurious statement piece with jet-black faceted crystals and gold-tone beads.">
-                    <div class="gallery-overlay">
-                        <h3>Soul Magnet</h3>
-                        <p>Bold, dramatic, and undeniably luxurious...</p>
-                        <button class="view-btn" data-id="1">View Details</button>
-                        <button class="order-btn" data-id="1">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 2 - Monarch Whisper -->
-                <div class="gallery-item" data-category="bracelets" data-id="2">
-                    <img src="imgaes/2monarch.jpeg" alt="Monarch Whisper Bracelet"
-                         data-name="Monarch Whisper"
-                         data-price="PKR 1,800"
-                         data-description="Gold-tone bracelet symbolizing enduring love with heart charm and heartbeat line design.">
-                    <div class="gallery-overlay">
-                        <h3>Monarch Whisper</h3>
-                        <p>A beautiful gold-tone bracelet that symbolizes enduring love...</p>
-                        <button class="view-btn" data-id="2">View Details</button>
-                        <button class="order-btn" data-id="2">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 3 - Monarch Variation 2 -->
-                <div class="gallery-item" data-category="bracelets" data-id="3">
-                    <img src="imgaes/1monarch.jpeg" alt="Monarch Whisper Variation"
-                         data-name="Monarch Whisper - Variation 2"
-                         data-price="PKR 1,800"
-                         data-description="Another beautiful variation of this timeless bracelet with delicate chain and heart charm.">
-                    <div class="gallery-overlay">
-                        <h3>Monarch Whisper</h3>
-                        <p>Another beautiful variation of this timeless bracelet...</p>
-                        <button class="view-btn" data-id="3">View Details</button>
-                        <button class="order-btn" data-id="3">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 4 - Monarch Variation 3 -->
-                <div class="gallery-item" data-category="bracelets" data-id="4">
-                    <img src="imgaes/4monarch.jpeg" alt="Monarch Whisper Variation"
-                         data-name="Monarch Whisper - Variation 3"
-                         data-price="PKR 1,800"
-                         data-description="Elegant variation with delicate details and heart charm design.">
-                    <div class="gallery-overlay">
-                        <h3>Monarch Whisper</h3>
-                        <p>Elegant variation with delicate details...</p>
-                        <button class="view-btn" data-id="4">View Details</button>
-                        <button class="order-btn" data-id="4">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 5 - Monarch Variation 4 -->
-                <div class="gallery-item" data-category="bracelets" data-id="5">
-                    <img src="imgaes/3monarch.jpeg" alt="Monarch Whisper Variation"
-                         data-name="Monarch Whisper - Variation 4"
-                         data-price="PKR 1,800"
-                         data-description="Final variation of this symbolic bracelet with gold-tone finish.">
-                    <div class="gallery-overlay">
-                        <h3>Monarch Whisper</h3>
-                        <p>Final variation of this symbolic bracelet...</p>
-                        <button class="view-btn" data-id="5">View Details</button>
-                        <button class="order-btn" data-id="5">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 6 - Heartline Rhythm -->
-                <div class="gallery-item" data-category="bracelets" data-id="6">
-                    <img src="imgaes/5heartline.jpeg" alt="The Heartline Rhythm Bracelet"
-                         data-name="The Heartline Rhythm"
-                         data-price="PKR 1,900"
-                         data-description="Gold-tone bracelet symbolizing love with delicate chain and heart charm.">
-                    <div class="gallery-overlay">
-                        <h3>The Heartline Rhythm</h3>
-                        <p>A beautiful gold-tone bracelet symbolizing love...</p>
-                        <button class="view-btn" data-id="6">View Details</button>
-                        <button class="order-btn" data-id="6">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 7 - Crystal Whisper -->
-                <div class="gallery-item" data-category="bracelets" data-id="7">
-                    <img src="imgaes/6crystal-whis.jpeg" alt="The Crystal Whisper Bracelet"
-                         data-name="The Crystal Whisper"
-                         data-price="PKR 2,200"
-                         data-description="Delicate bracelet with shimmering pink crystals, cherry blossom charm, and crystal tassel.">
-                    <div class="gallery-overlay">
-                        <h3>The Crystal Whisper</h3>
-                        <p>A delicate and luminous bracelet featuring shimmering pink crystals...</p>
-                        <button class="view-btn" data-id="7">View Details</button>
-                        <button class="order-btn" data-id="7">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 8 - Lumina Duo -->
-                <div class="gallery-item" data-category="bracelets" data-id="8">
-                    <img src="imgaes/7lumina-duo.jpeg" alt="Lumina Duo Bracelet Set"
-                         data-name="Lumina Duo"
-                         data-price="PKR 3,500"
-                         data-description="Dreamy pair of pearl bracelets with translucent butterfly charms in lilac and mint accents.">
-                    <div class="gallery-overlay">
-                        <h3>Lumina Duo</h3>
-                        <p>A dreamy pair of pearl bracelets with translucent butterfly charms...</p>
-                        <button class="view-btn" data-id="8">View Details</button>
-                        <button class="order-btn" data-id="8">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 9 - Pastel Cascade -->
-                <div class="gallery-item" data-category="bracelets" data-id="9">
-                    <img src="imgaes/8pastel-cas.jpeg" alt="Pastel Cascade Bracelet"
-                         data-name="Pastel Cascade"
-                         data-price="PKR 1,950"
-                         data-description="Beaded bracelet with soft pastel hues and silver four-leaf clover charm.">
-                    <div class="gallery-overlay">
-                        <h3>Pastel Cascade</h3>
-                        <p>A delightful beaded bracelet featuring a charming spectrum of soft pastel hues...</p>
-                        <button class="view-btn" data-id="9">View Details</button>
-                        <button class="order-btn" data-id="9">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 10 - Classic Gem Link -->
-                <div class="gallery-item" data-category="bracelets" data-id="10">
-                    <img src="imgaes/10classic-gem.jpeg" alt="Classic Gem Link Bracelet"
-                         data-name="Classic Gem Link"
-                         data-price="PKR 2,100"
-                         data-description="Refined minimalist bracelet with vibrant polished beads and delicate round rings.">
-                    <div class="gallery-overlay">
-                        <h3>Classic Gem Link</h3>
-                        <p>A refined, minimalist bracelet featuring vibrant polished beads...</p>
-                        <button class="view-btn" data-id="10">View Details</button>
-                        <button class="order-btn" data-id="10">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 11 - Stardust Stream -->
-                <div class="gallery-item" data-category="bracelets" data-id="11">
-                    <img src="imgaes/11stardust-stre.jpeg" alt="Stardust Stream Bracelet"
-                         data-name="Stardust Stream"
-                         data-price="PKR 2,300"
-                         data-description="Whimsical gold bracelet with pink gemstone beads and dangling gold star charms.">
-                    <div class="gallery-overlay">
-                        <h3>Stardust Stream</h3>
-                        <p>A whimsical gold bracelet featuring sparkling pink gemstone beads...</p>
-                        <button class="view-btn" data-id="11">View Details</button>
-                        <button class="order-btn" data-id="11">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 12 - Heartstring Pastel -->
-                <div class="gallery-item" data-category="bracelets" data-id="12">
-                    <img src="imgaes/12heartstring-pas.jpeg" alt="Heartstring Pastel Bracelet"
-                         data-name="Heartstring Pastel"
-                         data-price="PKR 1,850"
-                         data-description="Charming pastel beaded bracelet with soft heart accent.">
-                    <div class="gallery-overlay">
-                        <h3>Heartstring Pastel</h3>
-                        <p>A charming pastel beaded bracelet finished with a soft heart accent...</p>
-                        <button class="view-btn" data-id="12">View Details</button>
-                        <button class="order-btn" data-id="12">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 13 - Duo Serenity Stretch -->
-                <div class="gallery-item" data-category="bracelets" data-id="13">
-                    <img src="imgaes/13duo sernity-str.jpeg" alt="Duo Serenity Stretch Bracelet"
-                         data-name="Duo Serenity Stretch"
-                         data-price="PKR 2,400"
-                         data-description="Comfortable stretch bracelet with celestial beads and delicate charm cluster.">
-                    <div class="gallery-overlay">
-                        <h3>Duo Serenity Stretch</h3>
-                        <p>An effortlessly chic stretch bracelet featuring soft celestial beads...</p>
-                        <button class="view-btn" data-id="13">View Details</button>
-                        <button class="order-btn" data-id="13">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 14 - Duo Serenity Stretch Variation -->
-                <div class="gallery-item" data-category="bracelets" data-id="14">
-                    <img src="imgaes/14duo sernity-str.jpeg" alt="Duo Serenity Stretch Variation"
-                         data-name="Duo Serenity Stretch - Variation"
-                         data-price="PKR 2,400"
-                         data-description="Another beautiful variation of this serene bracelet with celestial beads.">
-                    <div class="gallery-overlay">
-                        <h3>Duo Serenity Stretch</h3>
-                        <p>Another beautiful variation of this serene bracelet...</p>
-                        <button class="view-btn" data-id="14">View Details</button>
-                        <button class="order-btn" data-id="14">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 15 - Ameline Serenity -->
-                <div class="gallery-item" data-category="bracelets" data-id="15">
-                    <img src="imgaes/15ameline-ser.jpeg" alt="Ameline Serenity Bracelet"
-                         data-name="Ameline Serenity"
-                         data-price="PKR 2,600"
-                         data-description="Graceful blend of pastel beads and delicate charms for elegant styling.">
-                    <div class="gallery-overlay">
-                        <h3>Ameline Serenity</h3>
-                        <p>A graceful blend of pastel beads and delicate charms...</p>
-                        <button class="view-btn" data-id="15">View Details</button>
-                        <button class="order-btn" data-id="15">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 16 - Aurora Whisper -->
-                <div class="gallery-item" data-category="bracelets" data-id="16">
-                    <img src="imgaes/16aurora-whi.jpeg" alt="Aurora Whisper Bracelet"
-                         data-name="Aurora Whisper"
-                         data-price="PKR 2,700"
-                         data-description="Delicate gold chain bracelet with luminous opal-like beads.">
-                    <div class="gallery-overlay">
-                        <h3>Aurora Whisper</h3>
-                        <p>A delicate gold chain bracelet adorned with luminous opal-like beads...</p>
-                        <button class="view-btn" data-id="16">View Details</button>
-                        <button class="order-btn" data-id="16">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 17 - Celestial Kitty -->
-                <div class="gallery-item" data-category="bracelets" data-id="17">
-                    <img src="imgaes/17calestial-kit.jpeg" alt="Celestial Kitty Bracelet"
-                         data-name="Celestial Kitty"
-                         data-price="PKR 2,800"
-                         data-description="Whimsical piece with pastel star charms, iridescent pearls, and enamel kitty pendant.">
-                    <div class="gallery-overlay">
-                        <h3>Celestial Kitty</h3>
-                        <p>Embrace a touch of whimsical nostalgia with our Celestial Kitty...</p>
-                        <button class="view-btn" data-id="17">View Details</button>
-                        <button class="order-btn" data-id="17">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 18 - Emerald Mist -->
-                <div class="gallery-item" data-category="bracelets" data-id="18">
-                    <img src="imgaes/18emerald-mis.jpeg" alt="Emerald Mist Bracelet"
-                         data-name="Emerald Mist"
-                         data-price="PKR 2,500"
-                         data-description="Sage green cracked glass beads with gold-tone hardware.">
-                    <div class="gallery-overlay">
-                        <h3>Emerald Mist</h3>
-                        <p>Capture the essence of a hidden forest with our Emerald Mist...</p>
-                        <button class="view-btn" data-id="18">View Details</button>
-                        <button class="order-btn" data-id="18">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 19 - Meadow and Mist -->
-                <div class="gallery-item" data-category="bracelets" data-id="19">
-                    <img src="imgaes/19meadow-mis.jpeg" alt="Meadow and Mist Bracelet"
-                         data-name="Meadow and Mist"
-                         data-price="PKR 3,200"
-                         data-description="Pair with lime green and sky blue cracked-glass beads with faux pearls.">
-                    <div class="gallery-overlay">
-                        <h3>Meadow and Mist</h3>
-                        <p>Celebrate harmony with our Meadow and Mist bracelet...</p>
-                        <button class="view-btn" data-id="19">View Details</button>
-                        <button class="order-btn" data-id="19">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 20 - Starlight Filigree -->
-                <div class="gallery-item" data-category="bracelets" data-id="20">
-                    <img src="imgaes/20starlight-fil.jpeg" alt="Starlight Filigree Bracelet"
-                         data-name="Starlight Filigree"
-                         data-price="PKR 2,900"
-                         data-description="Delicate silver-toned bracelet with dainty star charms.">
-                    <div class="gallery-overlay">
-                        <h3>Starlight Filigree</h3>
-                        <p>Capture the magic of a clear night sky with our Starlight Filigree...</p>
-                        <button class="view-btn" data-id="20">View Details</button>
-                        <button class="order-btn" data-id="20">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 21 - Pearlescent Petal -->
-                <div class="gallery-item" data-category="bracelets" data-id="21">
-                    <img src="imgaes/21pearlescent-pet.jpeg" alt="Pearlescent Petal Bracelet"
-                         data-name="Pearlescent Petal"
-                         data-price="PKR 3,000"
-                         data-description="Lustrous white pearls with enamel flower charm and crystal heart.">
-                    <div class="gallery-overlay">
-                        <h3>Pearlescent Petal</h3>
-                        <p>Exude timeless grace with our Pearlescent Petal...</p>
-                        <button class="view-btn" data-id="21">View Details</button>
-                        <button class="order-btn" data-id="21">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 22 - Ethereal Heart Link -->
-                <div class="gallery-item" data-category="bracelets" data-id="22">
-                    <img src="imgaes/22ethereal-hea.jpeg" alt="Ethereal Heart Link Bracelet"
-                         data-name="Ethereal Heart Link"
-                         data-price="PKR 2,700"
-                         data-description="Colorful cracked-glass beads with crystal heart centerpiece.">
-                    <div class="gallery-overlay">
-                        <h3>Ethereal Heart Link</h3>
-                        <p>Celebrate a spectrum of joy with our Ethereal Heart Link...</p>
-                        <button class="view-btn" data-id="22">View Details</button>
-                        <button class="order-btn" data-id="22">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 23 - Scarlet Dreamscape -->
-                <div class="gallery-item" data-category="bracelets" data-id="23">
-                    <img src="imgaes/23scarlet-dre.jpeg" alt="Scarlet Dreamscape Bracelet"
-                         data-name="Scarlet Dreamscape"
-                         data-price="PKR 2,800"
-                         data-description="Half-and-half design with scarlet crystals and frosted white beads.">
-                    <div class="gallery-overlay">
-                        <h3>Scarlet Dreamscape</h3>
-                        <p>Make a romantic statement with our Scarlet Dreamscape...</p>
-                        <button class="view-btn" data-id="23">View Details</button>
-                        <button class="order-btn" data-id="23">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 24 - Signature Petal -->
-                <div class="gallery-item" data-category="bracelets" data-id="24">
-                    <img src="imgaes/24signature-pet.jpeg" alt="Signature Petal Bracelet"
-                         data-name="Signature Petal"
-                         data-price="PKR 3,500"
-                         data-description="Sea-foam blue and rose-quartz pink bracelets with key and lock charms.">
-                    <div class="gallery-overlay">
-                        <h3>Signature Petal</h3>
-                        <p>A poetic symbol of trust and devotion...</p>
-                        <button class="view-btn" data-id="24">View Details</button>
-                        <button class="order-btn" data-id="24">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 25 - Winter Willow -->
-                <div class="gallery-item" data-category="bracelets" data-id="25">
-                    <img src="imgaes/25winter-willow.jpeg" alt="Winter Willow Bracelet"
-                         data-name="Winter Willow"
-                         data-price="PKR 2,900"
-                         data-description="Sky-blue and charcoal-grey faceted beads with silver-tone spacers.">
-                    <div class="gallery-overlay">
-                        <h3>Winter Willow</h3>
-                        <p>A sophisticated play of cool tones, featuring alternating clusters...</p>
-                        <button class="view-btn" data-id="25">View Details</button>
-                        <button class="order-btn" data-id="25">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 26 - Moonblush Strand -->
-                <div class="gallery-item" data-category="bracelets" data-id="26">
-                    <img src="imgaes/26moonblush-str.jpeg" alt="Moonblush Strand Bracelet"
-                         data-name="Moonblush Strand"
-                         data-price="PKR 3,100"
-                         data-description="Woven design with glass pearls and champagne bicone crystals.">
-                    <div class="gallery-overlay">
-                        <h3>Moonblush Strand</h3>
-                        <p>Elevate your everyday stack with this intricate woven design...</p>
-                        <button class="view-btn" data-id="26">View Details</button>
-                        <button class="order-btn" data-id="26">Order Now</button>
-                    </div>
-                </div>
-                
-                <!-- Product 27 - Unlocked Soul -->
-                <div class="gallery-item" data-category="bracelets" data-id="27">
-                    <img src="imgaes/27unlocked-soul.jpeg" alt="Unlocked Soul Bracelet Set"
-                         data-name="Unlocked Soul"
-                         data-price="PKR 3,800"
-                         data-description="Sea-foam blue and rose-quartz pink bracelets with key and lock design.">
-                    <div class="gallery-overlay">
-                        <h3>Unlocked Soul</h3>
-                        <p>A poetic symbol of trust and devotion. This duo features...</p>
-                        <button class="view-btn" data-id="27">View Details</button>
-                        <button class="order-btn" data-id="27">Order Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal for Product Details -->
-    <div class="modal" id="productModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="modalTitle">Product Details</h3>
-                <div class="close-modal" id="closeModal">&times;</div>
-            </div>
-            <div class="modal-body">
-                <div class="modal-img">
-                    <img id="modalImage" src="" alt="Product Image">
-                </div>
-                <div class="modal-text">
-                    <h4 id="modalProductName">Product Name</h4>
-                    <p id="modalDescription">Product description will appear here.</p>
-                    <div class="modal-price" id="modalPrice">Price: PKR 0</div>
-                    <div class="modal-actions">
-                        <a href="#" class="btn whatsapp-btn" id="whatsappOrderBtn" target="_blank">
-                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
-                        </a>
-                        <button class="btn btn-outline close-modal-btn">Continue Browsing</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Order Success Message -->
-    <div class="order-success" id="orderSuccess">
-        <div class="success-content">
-            <i class="fas fa-check-circle"></i>
-            <p>Order link generated! WhatsApp is opening...</p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery - Serenique Trezza Beaded Jewelry Collection</title>
+        <meta name="description" content="Explore our complete collection of handcrafted beaded jewelry. Necklaces, bracelets, earrings, and more - each piece tells a unique story.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="imgaes/logo.jpeg">
+    </head>
+    <body>
+        <!-- Header & Navigation -->
+        <header id="header">
+            <div class="container">
+                <div class="nav-container">
                     <div class="logo">
+                        <div class="logo-img">
+                            <a href="index.html"><img src="imgaes/logo.jpeg" alt="Serenique Trezza Logo"></a>
+                        </div>
                         <div class="logo-text">S<span>ERENIQUE</span>-T<span>REZZA</span></div>
                         <div class="logo-tagline">BEADED ELEGANCE</div>
                     </div>
-                    <p>Signature beaded elegance crafted for the modern woman. Each piece tells a story of sophistication and timeless beauty.</p>
-                    <div class="social-links">
-                        <a href="https://facebook.com/sereniquetrezza" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/serenique_trezza._.0" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/923359997124" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <div class="mobile-toggle" id="mobileToggle">
+                        <i class="fas fa-bars"></i>
                     </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
+                    <ul class="nav-links" id="navLinks">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.html" class="active">Shop Now</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h3>Order Information</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://wa.me/923359997124" target="_blank">Order via WhatsApp</a></li>
-                        <li><a href="index.html#contact">Customization Request</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Care Instructions</a></li>
-                    </ul>
+            </div>
+        </header>
+
+        <!-- Gallery Hero -->
+        <section class="gallery-hero">
+            <div class="container">
+                <h1 class="fade-in-up">Our Complete Collection</h1>
+                <p class="fade-in-up-delay">Explore our curated selection of handcrafted beaded jewelry. Each piece is designed with elegance and sophistication in mind.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Filter -->
+        <section class="gallery-filter-section">
+            <div class="container">
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">All Collections</button>
+                    <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+                    <button class="filter-btn" data-filter="earrings">Earrings</button>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2023 Serenique Trezza. All rights reserved. | Handcrafted with care in Karachi</p>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-grid-section">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- BRACELETS -->
+                    <!-- Soul Magnet -->
+                    <div class="gallery-item" data-category="bracelets" data-id="1">
+                        <img src="imgaes/28soul-magnet.jpeg" alt="Soul Magnet Bracelet" 
+                            data-name="Soul Magnet" 
+                            data-price="PKR 2,500"
+                            data-description="Bold, dramatic, and undeniably luxurious statement piece with jet-black faceted crystals and gold-tone beads.">
+                        <div class="gallery-overlay">
+                            <h3>Soul Magnet</h3>
+                            <p>Bold, dramatic, and undeniably luxurious...</p>
+                            <button class="view-btn" data-id="1">View Details</button>
+                            <button class="order-btn" data-id="1">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Monarch Whisper Variations - Combined -->
+                    <div class="gallery-item" data-category="bracelets" data-id="monarch-whisper" data-variations="true">
+                        <img src="imgaes/1monarch.jpeg" alt="Monarch Whisper Bracelet" 
+                            data-name="Monarch Whisper" 
+                            data-price="PKR 1,800"
+                            data-description="A beautiful gold-tone bracelet that symbolizes enduring love and life with heart charm and heartbeat line design.">
+                        <div class="variation-badge"><i class="fas fa-palette"></i> 4 Styles</div>
+                        <div class="gallery-overlay">
+                            <h3>Monarch Whisper</h3>
+                            <p>A beautiful gold-tone bracelet symbolizing love...</p>
+                            <button class="view-btn" data-id="monarch-whisper">View Details</button>
+                            <button class="order-btn" data-id="monarch-whisper">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Heartline Rhythm -->
+                    <div class="gallery-item" data-category="bracelets" data-id="6">
+                        <img src="imgaes/5heartline.jpeg" alt="The Heartline Rhythm Bracelet"
+                            data-name="The Heartline Rhythm"
+                            data-price="PKR 1,900"
+                            data-description="Gold-tone bracelet symbolizing love with delicate chain and heart charm.">
+                        <div class="gallery-overlay">
+                            <h3>The Heartline Rhythm</h3>
+                            <p>A beautiful gold-tone bracelet symbolizing love...</p>
+                            <button class="view-btn" data-id="6">View Details</button>
+                            <button class="order-btn" data-id="6">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Crystal Whisper -->
+                    <div class="gallery-item" data-category="bracelets" data-id="7">
+                        <img src="imgaes/6crystal-whis.jpeg" alt="The Crystal Whisper Bracelet"
+                            data-name="The Crystal Whisper"
+                            data-price="PKR 2,200"
+                            data-description="Delicate bracelet with shimmering pink crystals, cherry blossom charm, and crystal tassel.">
+                        <div class="gallery-overlay">
+                            <h3>The Crystal Whisper</h3>
+                            <p>A delicate and luminous bracelet...</p>
+                            <button class="view-btn" data-id="7">View Details</button>
+                            <button class="order-btn" data-id="7">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Lumina Duo -->
+                    <div class="gallery-item" data-category="bracelets" data-id="8">
+                        <img src="imgaes/7lumina-duo.jpeg" alt="Lumina Duo Bracelet Set"
+                            data-name="Lumina Duo"
+                            data-price="PKR 3,500"
+                            data-description="Dreamy pair of pearl bracelets with translucent butterfly charms in lilac and mint accents.">
+                        <div class="gallery-overlay">
+                            <h3>Lumina Duo</h3>
+                            <p>A dreamy pair of pearl bracelets...</p>
+                            <button class="view-btn" data-id="8">View Details</button>
+                            <button class="order-btn" data-id="8">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Pastel Cascade -->
+                    <div class="gallery-item" data-category="bracelets" data-id="9">
+                        <img src="imgaes/8pastel-cas.jpeg" alt="Pastel Cascade Bracelet"
+                            data-name="Pastel Cascade"
+                            data-price="PKR 1,950"
+                            data-description="Beaded bracelet with soft pastel hues and silver four-leaf clover charm.">
+                        <div class="gallery-overlay">
+                            <h3>Pastel Cascade</h3>
+                            <p>A delightful beaded bracelet...</p>
+                            <button class="view-btn" data-id="9">View Details</button>
+                            <button class="order-btn" data-id="9">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Dewdrop Spritz -->
+                    <div class="gallery-item" data-category="bracelets" data-id="dewdrop-spritz">
+                        <img src="imgaes/9dewdrop-spr.jpeg" alt="Dewdrop Spritz Bracelet"
+                            data-name="Dewdrop Spritz"
+                            data-price="PKR 2,100"
+                            data-description="A whisper-light gold chain adorned with delicate, multi-colored gemstone drops that sparkle like scattered dewdrops.">
+                        <div class="gallery-overlay">
+                            <h3>Dewdrop Spritz</h3>
+                            <p>A whisper-light gold chain...</p>
+                            <button class="view-btn" data-id="dewdrop-spritz">View Details</button>
+                            <button class="order-btn" data-id="dewdrop-spritz">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Classic Gem Link -->
+                    <div class="gallery-item" data-category="bracelets" data-id="10">
+                        <img src="imgaes/10classic-gem.jpeg" alt="Classic Gem Link Bracelet"
+                            data-name="Classic Gem Link"
+                            data-price="PKR 2,100"
+                            data-description="Refined minimalist bracelet with vibrant polished beads and delicate round rings.">
+                        <div class="gallery-overlay">
+                            <h3>Classic Gem Link</h3>
+                            <p>A refined, minimalist bracelet...</p>
+                            <button class="view-btn" data-id="10">View Details</button>
+                            <button class="order-btn" data-id="10">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Stardust Stream -->
+                    <div class="gallery-item" data-category="bracelets" data-id="11">
+                        <img src="imgaes/11stardust-stre.jpeg" alt="Stardust Stream Bracelet"
+                            data-name="Stardust Stream"
+                            data-price="PKR 2,300"
+                            data-description="Whimsical gold bracelet with pink gemstone beads and dangling gold star charms.">
+                        <div class="gallery-overlay">
+                            <h3>Stardust Stream</h3>
+                            <p>A whimsical gold bracelet...</p>
+                            <button class="view-btn" data-id="11">View Details</button>
+                            <button class="order-btn" data-id="11">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Heartstring Pastel -->
+                    <div class="gallery-item" data-category="bracelets" data-id="12">
+                        <img src="imgaes/12heartstring-pas.jpeg" alt="Heartstring Pastel Bracelet"
+                            data-name="Heartstring Pastel"
+                            data-price="PKR 1,850"
+                            data-description="Charming pastel beaded bracelet with soft heart accent.">
+                        <div class="gallery-overlay">
+                            <h3>Heartstring Pastel</h3>
+                            <p>A charming pastel beaded bracelet...</p>
+                            <button class="view-btn" data-id="12">View Details</button>
+                            <button class="order-btn" data-id="12">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Duo Serenity Stretch - Combined -->
+                    <div class="gallery-item" data-category="bracelets" data-id="duo-serenity" data-variations="true">
+                        <img src="imgaes/13duo sernity-str.jpeg" alt="Duo Serenity Stretch Bracelet"
+                            data-name="Duo Serenity Stretch"
+                            data-price="PKR 2,400"
+                            data-description="Comfortable stretch bracelet with celestial beads and delicate charm cluster.">
+                        <div class="variation-badge"><i class="fas fa-palette"></i> 2 Styles</div>
+                        <div class="gallery-overlay">
+                            <h3>Duo Serenity Stretch</h3>
+                            <p>An effortlessly chic stretch bracelet...</p>
+                            <button class="view-btn" data-id="duo-serenity">View Details</button>
+                            <button class="order-btn" data-id="duo-serenity">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Ameline Serenity -->
+                    <div class="gallery-item" data-category="bracelets" data-id="15">
+                        <img src="imgaes/15ameline-ser.jpeg" alt="Ameline Serenity Bracelet"
+                            data-name="Ameline Serenity"
+                            data-price="PKR 2,600"
+                            data-description="Graceful blend of pastel beads and delicate charms for elegant styling.">
+                        <div class="gallery-overlay">
+                            <h3>Ameline Serenity</h3>
+                            <p>A graceful blend of pastel beads...</p>
+                            <button class="view-btn" data-id="15">View Details</button>
+                            <button class="order-btn" data-id="15">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Aurora Whisper -->
+                    <div class="gallery-item" data-category="bracelets" data-id="16">
+                        <img src="imgaes/16aurora-whi.jpeg" alt="Aurora Whisper Bracelet"
+                            data-name="Aurora Whisper"
+                            data-price="PKR 2,700"
+                            data-description="Delicate gold chain bracelet with luminous opal-like beads.">
+                        <div class="gallery-overlay">
+                            <h3>Aurora Whisper</h3>
+                            <p>A delicate gold chain bracelet...</p>
+                            <button class="view-btn" data-id="16">View Details</button>
+                            <button class="order-btn" data-id="16">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Celestial Kitty -->
+                    <div class="gallery-item" data-category="bracelets" data-id="17">
+                        <img src="imgaes/17calestial-kit.jpeg" alt="Celestial Kitty Bracelet"
+                            data-name="Celestial Kitty"
+                            data-price="PKR 2,800"
+                            data-description="Whimsical piece with pastel star charms, iridescent pearls, and enamel kitty pendant.">
+                        <div class="gallery-overlay">
+                            <h3>Celestial Kitty</h3>
+                            <p>Embrace a touch of whimsical nostalgia...</p>
+                            <button class="view-btn" data-id="17">View Details</button>
+                            <button class="order-btn" data-id="17">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Emerald Mist -->
+                    <div class="gallery-item" data-category="bracelets" data-id="18">
+                        <img src="imgaes/18emerald-mis.jpeg" alt="Emerald Mist Bracelet"
+                            data-name="Emerald Mist"
+                            data-price="PKR 2,500"
+                            data-description="Sage green cracked glass beads with gold-tone hardware.">
+                        <div class="gallery-overlay">
+                            <h3>Emerald Mist</h3>
+                            <p>Capture the essence of a hidden forest...</p>
+                            <button class="view-btn" data-id="18">View Details</button>
+                            <button class="order-btn" data-id="18">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Meadow and Mist -->
+                    <div class="gallery-item" data-category="bracelets" data-id="19">
+                        <img src="imgaes/19meadow-mis.jpeg" alt="Meadow and Mist Bracelet"
+                            data-name="Meadow and Mist"
+                            data-price="PKR 3,200"
+                            data-description="Pair with lime green and sky blue cracked-glass beads with faux pearls.">
+                        <div class="gallery-overlay">
+                            <h3>Meadow and Mist</h3>
+                            <p>Celebrate harmony with our Meadow and Mist...</p>
+                            <button class="view-btn" data-id="19">View Details</button>
+                            <button class="order-btn" data-id="19">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Starlight Filigree -->
+                    <div class="gallery-item" data-category="bracelets" data-id="20">
+                        <img src="imgaes/20starlight-fil.jpeg" alt="Starlight Filigree Bracelet"
+                            data-name="Starlight Filigree"
+                            data-price="PKR 2,900"
+                            data-description="Delicate silver-toned bracelet with dainty star charms.">
+                        <div class="gallery-overlay">
+                            <h3>Starlight Filigree</h3>
+                            <p>Capture the magic of a clear night sky...</p>
+                            <button class="view-btn" data-id="20">View Details</button>
+                            <button class="order-btn" data-id="20">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Pearlescent Petal -->
+                    <div class="gallery-item" data-category="bracelets" data-id="21">
+                        <img src="imgaes/21pearlescent-pet.jpeg" alt="Pearlescent Petal Bracelet"
+                            data-name="Pearlescent Petal"
+                            data-price="PKR 3,000"
+                            data-description="Lustrous white pearls with enamel flower charm and crystal heart.">
+                        <div class="gallery-overlay">
+                            <h3>Pearlescent Petal</h3>
+                            <p>Exude timeless grace with our Pearlescent Petal...</p>
+                            <button class="view-btn" data-id="21">View Details</button>
+                            <button class="order-btn" data-id="21">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Ethereal Heart Link -->
+                    <div class="gallery-item" data-category="bracelets" data-id="22">
+                        <img src="imgaes/22ethereal-hea.jpeg" alt="Ethereal Heart Link Bracelet"
+                            data-name="Ethereal Heart Link"
+                            data-price="PKR 2,700"
+                            data-description="Colorful cracked-glass beads with crystal heart centerpiece.">
+                        <div class="gallery-overlay">
+                            <h3>Ethereal Heart Link</h3>
+                            <p>Celebrate a spectrum of joy with our Ethereal Heart Link...</p>
+                            <button class="view-btn" data-id="22">View Details</button>
+                            <button class="order-btn" data-id="22">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Scarlet Dreamscape -->
+                    <div class="gallery-item" data-category="bracelets" data-id="23">
+                        <img src="imgaes/23scarlet-dre.jpeg" alt="Scarlet Dreamscape Bracelet"
+                            data-name="Scarlet Dreamscape"
+                            data-price="PKR 2,800"
+                            data-description="Half-and-half design with scarlet crystals and frosted white beads.">
+                        <div class="gallery-overlay">
+                            <h3>Scarlet Dreamscape</h3>
+                            <p>Make a romantic statement with our Scarlet Dreamscape...</p>
+                            <button class="view-btn" data-id="23">View Details</button>
+                            <button class="order-btn" data-id="23">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Signature Petal -->
+                    <div class="gallery-item" data-category="bracelets" data-id="24">
+                        <img src="imgaes/24signature-pet.jpeg" alt="Signature Petal Bracelet"
+                            data-name="Signature Petal"
+                            data-price="PKR 3,500"
+                            data-description="Sea-foam blue and rose-quartz pink bracelets with key and lock charms.">
+                        <div class="gallery-overlay">
+                            <h3>Signature Petal</h3>
+                            <p>A poetic symbol of trust and devotion...</p>
+                            <button class="view-btn" data-id="24">View Details</button>
+                            <button class="order-btn" data-id="24">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Winter Willow -->
+                    <div class="gallery-item" data-category="bracelets" data-id="25">
+                        <img src="imgaes/25winter-willow.jpeg" alt="Winter Willow Bracelet"
+                            data-name="Winter Willow"
+                            data-price="PKR 2,900"
+                            data-description="Sky-blue and charcoal-grey faceted beads with silver-tone spacers.">
+                        <div class="gallery-overlay">
+                            <h3>Winter Willow</h3>
+                            <p>A sophisticated play of cool tones...</p>
+                            <button class="view-btn" data-id="25">View Details</button>
+                            <button class="order-btn" data-id="25">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Moonblush Strand -->
+                    <div class="gallery-item" data-category="bracelets" data-id="26">
+                        <img src="imgaes/26moonblush-str.jpeg" alt="Moonblush Strand Bracelet"
+                            data-name="Moonblush Strand"
+                            data-price="PKR 3,100"
+                            data-description="Woven design with glass pearls and champagne bicone crystals.">
+                        <div class="gallery-overlay">
+                            <h3>Moonblush Strand</h3>
+                            <p>Elevate your everyday stack...</p>
+                            <button class="view-btn" data-id="26">View Details</button>
+                            <button class="order-btn" data-id="26">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Unlocked Soul -->
+                    <div class="gallery-item" data-category="bracelets" data-id="27">
+                        <img src="imgaes/27unlocked-soul.jpeg" alt="Unlocked Soul Bracelet Set"
+                            data-name="Unlocked Soul"
+                            data-price="PKR 3,800"
+                            data-description="Sea-foam blue and rose-quartz pink bracelets with key and lock design.">
+                        <div class="gallery-overlay">
+                            <h3>Unlocked Soul</h3>
+                            <p>A poetic symbol of trust and devotion...</p>
+                            <button class="view-btn" data-id="27">View Details</button>
+                            <button class="order-btn" data-id="27">Order Now</button>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <!-- EARRINGS -->
+                    <!-- Amore Heartlets - Combined -->
+                    <div class="gallery-item" data-category="earrings" data-id="amore-heartlets" data-variations="true">
+                        <img src="imgaes/The amore heartlets1.jpeg" alt="The Amore Heartlets Earrings"
+                            data-name="The Amore Heartlets"
+                            data-price="PKR 1,900"
+                            data-description="Simple, sweet, and radiating love. These charming drop earrings feature translucent, ruby-red heart charms with a subtle crystalline shimmer.">
+                        <div class="variation-badge"><i class="fas fa-palette"></i> 4 Colors</div>
+                        <div class="gallery-overlay">
+                            <h3>The Amore Heartlets</h3>
+                            <p>Simple, sweet, and radiating love...</p>
+                            <button class="view-btn" data-id="amore-heartlets">View Details</button>
+                            <button class="order-btn" data-id="amore-heartlets">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Lunar Dangle -->
+                    <div class="gallery-item" data-category="earrings" data-id="lunar-dangle">
+                        <img src="imgaes/Lunar dangle6.jpeg" alt="Lunar Dangle Earrings"
+                            data-name="Lunar Dangle"
+                            data-price="PKR 2,300"
+                            data-description="These exquisite drop earrings feature a spiraling staircase of lustrous white pearls that gracefully wind around a delicate gold-toned chain.">
+                        <div class="gallery-overlay">
+                            <h3>Lunar Dangle</h3>
+                            <p>Exquisite drop earrings with spiraling pearls...</p>
+                            <button class="view-btn" data-id="lunar-dangle">View Details</button>
+                            <button class="order-btn" data-id="lunar-dangle">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Royal Periwinkle -->
+                    <div class="gallery-item" data-category="earrings" data-id="royal-periwinkle">
+                        <img src="imgaes/Royal periwinkle8.jpeg" alt="Royal Periwinkle Earrings"
+                            data-name="Royal Periwinkle"
+                            data-price="PKR 2,100"
+                            data-description="Add a touch of floral elegance to your look with these handcrafted woven earrings featuring soft periwinkle blue beadwork.">
+                        <div class="gallery-overlay">
+                            <h3>Royal Periwinkle</h3>
+                            <p>Handcrafted woven earrings...</p>
+                            <button class="view-btn" data-id="royal-periwinkle">View Details</button>
+                            <button class="order-btn" data-id="royal-periwinkle">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Sorbet Halo -->
+                    <div class="gallery-item" data-category="earrings" data-id="sorbet-halo">
+                        <img src="imgaes/Sorbet halo7.jpeg" alt="Sorbet Halo Earrings"
+                            data-name="Sorbet Halo"
+                            data-price="PKR 2,400"
+                            data-description="These exquisite drop earrings feature a spiraling staircase of lustrous white pearls that gracefully wind around a delicate gold-toned chain.">
+                        <div class="gallery-overlay">
+                            <h3>Sorbet Halo</h3>
+                            <p>Exquisite drop earrings with spiraling pearls...</p>
+                            <button class="view-btn" data-id="sorbet-halo">View Details</button>
+                            <button class="order-btn" data-id="sorbet-halo">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- The Alabaster Belle -->
+                    <div class="gallery-item" data-category="earrings" data-id="alabaster-belle">
+                        <img src="imgaes/The alabaster belle9.jpeg" alt="The Alabaster Belle Earrings"
+                            data-name="The Alabaster Belle"
+                            data-price="PKR 2,200"
+                            data-description="Pure, playful, and perfectly poised. These whimsical drop earrings feature a matte white coquette bow with lily-of-the-valley bell charms.">
+                        <div class="gallery-overlay">
+                            <h3>The Alabaster Belle</h3>
+                            <p>Pure, playful, and perfectly poised...</p>
+                            <button class="view-btn" data-id="alabaster-belle">View Details</button>
+                            <button class="order-btn" data-id="alabaster-belle">Order Now</button>
+                        </div>
+                    </div>
+                    
+                    <!-- The Zephyr Leaf -->
+                    <div class="gallery-item" data-category="earrings" data-id="zephyr-leaf">
+                        <img src="imgaes/Zephyr leaf5.jpeg" alt="The Zephyr Leaf Earrings"
+                            data-name="The Zephyr Leaf"
+                            data-price="PKR 2,000"
+                            data-description="Embrace the beauty of nature with these delicate golden leaf drops featuring finely detailed filigree leaf charm with pearl terminal.">
+                        <div class="gallery-overlay">
+                            <h3>The Zephyr Leaf</h3>
+                            <p>Embrace the beauty of nature...</p>
+                            <button class="view-btn" data-id="zephyr-leaf">View Details</button>
+                            <button class="order-btn" data-id="zephyr-leaf">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for Product Details -->
+        <div class="modal" id="productModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modalTitle">Product Details</h3>
+                    <div class="close-modal" id="closeModal">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <!-- Regular single image container -->
+                    <div class="modal-img">
+                        <img id="modalImage" src="" alt="Product Image">
+                    </div>
+                    
+                    <!-- Slider Container (hidden by default) -->
+                    <div class="modal-img-slider">
+                        <div class="swiper" id="productSwiper">
+                            <div class="swiper-wrapper" id="swiperWrapper">
+                                <!-- Slides will be added by JavaScript -->
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-text">
+                        <h4 id="modalProductName">Product Name</h4>
+                        <p id="modalDescription">Product description will appear here.</p>
+                        <div class="modal-price" id="modalPrice">Price: PKR 0</div>
+                        <div class="modal-actions">
+                            <a href="#" class="btn whatsapp-btn" id="whatsappOrderBtn" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                            </a>
+                            <button class="btn btn-outline close-modal-btn">Continue Browsing</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+            <!-- Order Success Message -->
+        <div class="order-success" id="orderSuccess">
+            <div class="success-content">
+                <i class="fas fa-check-circle"></i>
+                <p>Order link generated! WhatsApp is opening...</p>
+            </div>
+        </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-col">
+                        <div class="logo">
+                            <div class="logo-text">S<span>ERENIQUE</span>-T<span>REZZA</span></div>
+                            <div class="logo-tagline">BEADED ELEGANCE</div>
+                        </div>
+                        <p>Signature beaded elegance crafted for the modern woman. Each piece tells a story of sophistication and timeless beauty.</p>
+                        <div class="social-links">
+                            <a href="https://facebook.com/sereniquetrezza" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/serenique_trezza._.0" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/923359997124" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Order Information</h3>
+                        <ul class="footer-links">
+                            <li><a href="https://wa.me/923359997124" target="_blank">Order via WhatsApp</a></li>
+                            <li><a href="index.html#contact">Customization Request</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Care Instructions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 Serenique Trezza. All rights reserved. | Handcrafted with care in Karachi</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>
