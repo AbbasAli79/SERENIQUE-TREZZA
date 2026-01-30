@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Serenique Trezza Beaded Elegance</title>
+    <meta name="description"
+        content="Privacy policy for Serenique Trezza. Learn how we protect your personal information and handle your data with care.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgaes/logo.jpeg">
+    <style>
+        /* Additional styles specific to Privacy Policy page */
+        .privacy-hero {
+            margin-top: 100px;
+            padding: 100px 0;
+            background: linear-gradient(135deg, rgba(107, 78, 140, 0.9), rgba(200, 124, 165, 0.9)),
+                        url('imgaes/24signature-pet.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .privacy-hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .privacy-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .privacy-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .privacy-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.6;
+        }
+        
+        .last-updated {
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .privacy-content {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .policy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 50px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--light-purple);
+        }
+        
+        .policy-section {
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--light-purple);
+        }
+        
+        .policy-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .policy-section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-purple);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .policy-section h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary-purple), var(--primary-pink));
+            bottom: 0;
+            left: 0;
+        }
+        
+        .policy-section p {
+            margin-bottom: 15px;
+            color: var(--medium-gray);
+            line-height: 1.7;
+        }
+        
+        .policy-section ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .policy-section li {
+            margin-bottom: 10px;
+            color: var(--medium-gray);
+            line-height: 1.6;
+        }
+        
+        .highlight-box {
+            background-color: var(--light-purple);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid var(--primary-purple);
+            margin: 25px 0;
+        }
+        
+        .highlight-box h4 {
+            color: var(--primary-purple);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info-box {
+            background: linear-gradient(135deg, var(--light-purple) 0%, var(--light-pink) 100%);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+            border: 1px solid rgba(107, 78, 140, 0.1);
+        }
+        
+        .contact-info-box h3 {
+            color: var(--primary-purple);
+            margin-bottom: 15px;
+        }
+        
+        .policy-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--light-purple);
+        }
+        
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            background-color: var(--white);
+            border: 2px solid var(--light-purple);
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            transition: var(--transition);
+            color: var(--primary-purple);
+            text-decoration: none;
+        }
+        
+        .nav-btn:hover {
+            background-color: var(--primary-purple);
+            color: var(--white);
+            border-color: var(--primary-purple);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 992px) {
+            .privacy-hero h1 {
+                font-size: 3rem;
+            }
+            
+            .policy-container {
+                padding: 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .privacy-hero {
+                margin-top: 80px;
+                padding: 80px 0;
+                min-height: 30vh;
+            }
+            
+            .privacy-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .privacy-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .privacy-content {
+                padding: 50px 0;
+            }
+            
+            .policy-container {
+                padding: 30px 20px;
+                margin: 0 15px;
+            }
+            
+            .policy-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .policy-navigation {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .highlight-box {
+                padding: 20px;
+            }
+            
+            .contact-info-box {
+                padding: 25px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .privacy-hero {
+                padding: 60px 0;
+            }
+            
+            .privacy-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .policy-container {
+                padding: 25px 15px;
+                margin: 0 10px;
+            }
+            
+            .policy-section {
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+            }
+            
+            .policy-section h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-img">
+                        <a href="index.html"><img src="imgaes/logo.jpeg" alt="Serenique Trezza Logo"></a>
+                    </div>
+                    <div class="logo-text">S<span>ERENIQUE</span>-T<span>REZZA</span></div>
+                    <div class="logo-tagline">BEADED ELEGANCE</div>
+                </div>
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="gallery.html">Shop Now</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Privacy Policy Hero -->
+    <section class="privacy-hero">
+        <div class="privacy-hero-content">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy and trust are important to us. Learn how we protect and handle your personal information at Serenique Trezza.</p>
+            <div class="last-updated">Last Updated: January 30, 2026</div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Content -->
+    <section class="privacy-content">
+        <div class="container">
+            <div class="policy-container">
+                <!-- Introduction -->
+                <div class="policy-section">
+                    <h2>Introduction</h2>
+                    <p>Welcome to Serenique Trezza's Privacy Policy. We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at <a href="mailto:sereniquetrezza0@gmail.com">sereniquetrezza0@gmail.com</a>.</p>
+                    <p>This Privacy Policy governs the privacy of those who use our website and services. By using our services, you consent to the data practices described in this policy.</p>
+                </div>
+                
+                <!-- Information We Collect -->
+                <div class="policy-section">
+                    <h2>Information We Collect</h2>
+                    <p>We collect personal information that you voluntarily provide to us when you:</p>
+                    <ul>
+                        <li>Place an order through WhatsApp or our website</li>
+                        <li>Contact us for customer support or inquiries</li>
+                        <li>Request custom jewelry designs</li>
+                        <li>Sign up for updates or promotions</li>
+                    </ul>
+                    <p>The personal information we collect may include:</p>
+                    <ul>
+                        <li><strong>Contact Information:</strong> Name, email address, phone number, shipping address</li>
+                        <li><strong>Order Information:</strong> Products ordered, payment details, delivery preferences</li>
+                        <li><strong>Communication Data:</strong> Messages exchanged via WhatsApp or email</li>
+                    </ul>
+                </div>
+                
+                <!-- How We Use Your Information -->
+                <div class="policy-section">
+                    <h2>How We Use Your Information</h2>
+                    <p>We use the information we collect in the following ways:</p>
+                    <div class="highlight-box">
+                        <h4>Primary Uses:</h4>
+                        <ul>
+                            <li>To process and fulfill your orders</li>
+                            <li>To communicate with you about your orders and inquiries</li>
+                            <li>To provide customer support and address concerns</li>
+                            <li>To create custom jewelry designs as requested</li>
+                            <li>To send order confirmations and shipping updates</li>
+                        </ul>
+                    </div>
+                    <p>We do not sell, trade, or rent your personal information to third parties. Your information is used solely for order processing and communication purposes related to Serenique Trezza services.</p>
+                </div>
+                
+                <!-- Data Protection -->
+                <div class="policy-section">
+                    <h2>Data Protection</h2>
+                    <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, please note that no method of transmission over the internet or electronic storage is 100% secure.</p>
+                    
+                    <div class="highlight-box">
+                        <h4>Our Protection Measures:</h4>
+                        <ul>
+                            <li>Secure communication channels (WhatsApp Business, encrypted email)</li>
+                            <li>Limited access to personal information within our team</li>
+                            <li>Regular review of our data collection, storage, and processing practices</li>
+                            <li>Secure storage of order information for necessary duration only</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Your Privacy Rights -->
+                <div class="policy-section">
+                    <h2>Your Privacy Rights</h2>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li><strong>Access:</strong> Request access to your personal information we hold</li>
+                        <li><strong>Correction:</strong> Request correction of any inaccurate or incomplete information</li>
+                        <li><strong>Deletion:</strong> Request deletion of your personal information (subject to legal requirements)</li>
+                        <li><strong>Objection:</strong> Object to processing of your personal information</li>
+                        <li><strong>Restriction:</strong> Request restriction of processing your personal information</li>
+                    </ul>
+                    <p>To exercise any of these rights, please contact us at <a href="mailto:sereniquetrezza0@gmail.com">sereniquetrezza0@gmail.com</a> or via WhatsApp at <a href="https://wa.me/923359997124">0335 9997124</a>.</p>
+                </div>
+                
+                <!-- Cookies Policy -->
+                <div class="policy-section">
+                    <h2>Cookies Policy</h2>
+                    <p>Our website may use cookies to improve your browsing experience and website performance. Cookies are small data files stored on your device that help us:</p>
+                    <ul>
+                        <li>Remember your preferences and settings</li>
+                        <li>Understand how you use our website</li>
+                        <li>Improve website functionality and performance</li>
+                    </ul>
+                    <p>You can control cookies through your browser settings. However, disabling cookies may affect your experience on our website.</p>
+                </div>
+                
+                <!-- Third-Party Services -->
+                <div class="policy-section">
+                    <h2>Third-Party Services</h2>
+                    <p>We may use third-party services that collect information for various purposes:</p>
+                    <ul>
+                        <li><strong>WhatsApp Business:</strong> For order processing and communication</li>
+                        <li><strong>Payment Processors:</strong> For secure payment transactions</li>
+                        <li><strong>Analytics Tools:</strong> To understand website usage patterns</li>
+                    </ul>
+                    <p>These third-party services have their own privacy policies, and we encourage you to review them.</p>
+                </div>
+                
+                <!-- Policy Updates -->
+                <div class="policy-section">
+                    <h2>Policy Updates</h2>
+                    <p>We may update this Privacy Policy from time to time. The updated version will be indicated by an updated "Last Updated" date at the top of this page. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information.</p>
+                    <p>If we make material changes to this Privacy Policy, we will notify you through prominent notice on our website or via direct communication.</p>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-box">
+                    <h3>Contact Us</h3>
+                    <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
+                        <div><i class="fas fa-envelope"></i> <a href="mailto:sereniquetrezza0@gmail.com">sereniquetrezza0@gmail.com</a></div>
+                        <div><i class="fab fa-whatsapp"></i> <a href="https://wa.me/923359997124">0335 9997124</a></div>
+                    </div>
+                    <a href="index.html#contact" class="btn">Visit Contact Page</a>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="policy-navigation">
+                    <a href="index.html" class="nav-btn">
+                        <i class="fas fa-home"></i> Back to Home
+                    </a>
+                    <a href="index.html#contact" class="nav-btn">
+                        Contact Us <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-text">S<span>ERENIQUE</span>-T<span>REZZA</span></div>
+                        <div class="logo-tagline">BEADED ELEGANCE</div>
+                    </div>
+                    <p>Handcrafted beaded accessories that celebrate individuality and timeless beauty. Each piece is meticulously woven with care and passion in Karachi.</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/sereniquetrezza" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/serenique_trezza._.0" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/923359997124" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://tiktok.com/@sereniquetrezza" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="gallery.html">Shop Collection</a></li>
+                        <li><a href="index.html#reviews">Customer Reviews</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/923359997124" target="_blank">Order via WhatsApp</a></li>
+                        <li><a href="#contact">Custom Design Request</a></li>
+                        <li><a href="privacy.html">Shipping & Delivery Policy</a></li>
+                        <li><a href="privacy.html">Returns & Exchanges</a></li>
+                        <li><a href="privacy.html">Care Instructions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Policies</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Cookie Policy</a></li>
+                        <li><a href="privacy.html">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2026 <strong>Serenique Trezza</strong>. All rights reserved. | Handcrafted with love in Karachi, Pakistan</p>
+                    <p style="margin-top: 10px; font-size: 0.85rem;">Design & Development by Serenique Trezza Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/923359997124" target="_blank" class="whatsapp-float">
+        <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="whatsapp-text">
+            Contact on WhatsApp
+        </div>
+    </a>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (mobileToggle && navLinks) {
+                mobileToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    mobileToggle.innerHTML = navLinks.classList.contains('active')
+                        ? '<i class="fas fa-times"></i>'
+                        : '<i class="fas fa-bars"></i>';
+                    
+                    // Prevent body scroll when menu is open on mobile
+                    if (navLinks.classList.contains('active') && window.innerWidth <= 768) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+                
+                // Close mobile menu when clicking a link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                            mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                            document.body.style.overflow = 'auto';
+                        }
+                    });
+                });
+            }
+            
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.getElementById('header');
+                if (header) {
+                    if (window.scrollY > 50) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (this.getAttribute('href') === '#') return;
+                    
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    
+                    if (targetId === '#') return;
+                    
+                    if (targetId.startsWith('#')) {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 70,
+                                behavior: 'smooth'
+                            });
+                            
+                            // Close mobile menu if open
+                            if (navLinks && navLinks.classList.contains('active')) {
+                                navLinks.classList.remove('active');
+                                if (mobileToggle) {
+                                    mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                                }
+                                document.body.style.overflow = 'auto';
+                            }
+                        }
+                    }
+                });
+            });
+            
+            // Initialize with scrolled class if page is scrolled on load
+            if (window.scrollY > 50) {
+                const header = document.getElementById('header');
+                if (header) {
+                    header.classList.add('scrolled');
+                }
+            }
+            
+            // Animate sections on scroll
+            const policySections = document.querySelectorAll('.policy-section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            // Set initial state and observe
+            policySections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(section);
+            });
+            
+            // Fix for mobile viewport height
+            function setViewportHeight() {
+                let vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+            }
+            
+            // Set viewport height on load and resize
+            setViewportHeight();
+            window.addEventListener('resize', setViewportHeight);
+        });
+    </script>
+</body>
+
+</html>
